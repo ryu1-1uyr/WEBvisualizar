@@ -1,0 +1,64 @@
+#lp{
+    animation: left-in 3s ease-in-out;
+}
+
+#lp::after{
+    box-sizing: inherit;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-origin: center;
+    border-right: 4px solid white;
+    visibility: hidden;
+    animation: line-fade 2s ease 3s ;
+}
+
+#cap{
+    margin: 0 auto;
+    animation: right-in 3s ease-in-out;
+}
+
+@keyframes left-in {
+    0%{ left: -700px; }
+    100%{ left: 0; }
+}
+
+@keyframes right-in {
+    0%{ right: -700px; }
+    100%{ right: 0; }
+}
+
+@keyframes line-fade {
+    0%{ transform: scale3d(1,0,1); visibility: visible; }
+    100%{ transform: scale3d(1,1,1); visibility: visible;}
+}
+#lp{
+    animation: left-in 3s ease-in-out, horizontal 1.5s ease-in-out infinite alternate;
+}
+
+#cap{
+    margin: 0 auto;
+    animation: right-in 3s ease-in-out, horizontal 1.5s ease-in-out infinite alternate;
+}
+
+.lpimg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    margin: 0 auto;
+    animation: vertical 1s ease-in-out infinite alternate;
+}
+
+@keyframes horizontal {
+    0% {transform:translateX( -8px); }
+    100% { transform:translateX(  0px); }
+}
+
+@keyframes vertical {
+    0% { transform:translate(-50%,-50%); }
+    100% { transform:translate(-50%,-55%); }
+}
