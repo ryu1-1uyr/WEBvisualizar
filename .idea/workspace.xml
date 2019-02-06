@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b98bade6-bc86-4368-b6ab-889f0cb7a8f2" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Disc1 - UNGLAND 7/01 Nizikawa - BASS DROPが1秒しかない曲がある.mp3" afterPath="$PROJECT_DIR$/music/01 Nizikawa - BASS DROPが1秒しかない曲がある.mp3" />
-      <change beforePath="$PROJECT_DIR$/Disc1 - UNGLAND 7/02 Sanaas - P.O.I.mp3" afterPath="$PROJECT_DIR$/music/02 Sanaas - P.O.I.mp3" />
-      <change beforePath="$PROJECT_DIR$/Disc1 - UNGLAND 7/03 Tanchiky - THIS MAN ~newwave of laugh~.mp3" afterPath="$PROJECT_DIR$/music/03 Tanchiky - THIS MAN ~newwave of laugh~.mp3" />
-      <change beforePath="$PROJECT_DIR$/Disc1 - UNGLAND 7/04 maidable - Mukanai Booooom.mp3" afterPath="$PROJECT_DIR$/music/04 maidable - Mukanai Booooom.mp3" />
-      <change beforePath="$PROJECT_DIR$/Disc1 - UNGLAND 7/05 三級知財管理技能士 - 6300001st test.mp3" afterPath="$PROJECT_DIR$/music/05 三級知財管理技能士 - 6300001st test.mp3" />
-      <change beforePath="$PROJECT_DIR$/Disc1 - UNGLAND 7/06 BUBBLE-B - TSURUBE.mp3" afterPath="$PROJECT_DIR$/music/06 BUBBLE-B - TSURUBE.mp3" />
-      <change beforePath="$PROJECT_DIR$/Disc1 - UNGLAND 7/07 nyankobrq - ｍａｃｏｔｏ　ｔｙｐｅ　ｂｅａｔ.mp3" afterPath="$PROJECT_DIR$/music/07 nyankobrq - ｍａｃｏｔｏ　ｔｙｐｅ　ｂｅａｔ.mp3" />
-      <change beforePath="$PROJECT_DIR$/Disc1 - UNGLAND 7/08 Oblongar - SPEED GARAGE is Back.mp3" afterPath="$PROJECT_DIR$/music/08 Oblongar - SPEED GARAGE is Back.mp3" />
-      <change beforePath="$PROJECT_DIR$/Disc1 - UNGLAND 7/09 yaseta - Kimi no nawa。.mp3" afterPath="$PROJECT_DIR$/music/09 yaseta - Kimi no nawa。.mp3" />
-      <change beforePath="$PROJECT_DIR$/Disc1 - UNGLAND 7/10 saradisk - CIAOちゅ〜るremix.mp3" afterPath="$PROJECT_DIR$/music/10 saradisk - CIAOちゅ〜るremix.mp3" />
-      <change beforePath="$PROJECT_DIR$/Disc1 - UNGLAND 7/11 sabi_c - カードプッシャーさくら.mp3" afterPath="$PROJECT_DIR$/music/11 sabi_c - カードプッシャーさくら.mp3" />
-      <change beforePath="$PROJECT_DIR$/Disc1 - UNGLAND 7/12 Matatabi Sound System &amp; Kobaryo - FXで有り金全部溶かす人の曲 (仮想通貨Mix).mp3" afterPath="$PROJECT_DIR$/music/12 Matatabi Sound System &amp; Kobaryo - FXで有り金全部溶かす人の曲 (仮想通貨Mix).mp3" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -75,7 +62,7 @@
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+              <caret line="0" column="6" lean-forward="true" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -324,12 +311,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1549441765016</updated>
-      <workItem from="1549441766341" duration="3870000" />
+      <workItem from="1549441766341" duration="3929000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3870000" />
+    <option name="totallyTimeSpent" value="3929000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
@@ -402,7 +389,7 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <caret line="0" column="6" lean-forward="true" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
           <folding />
         </state>
       </provider>
