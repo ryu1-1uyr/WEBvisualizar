@@ -40,9 +40,22 @@ function init(){
     controlCamera.position.set(0, 500, 1600);
     let controls = new THREE.OrbitControls(controlCamera);
 
+    let geometry = new THREE.BoxGeometry( 50, 50, 50 );
+    let material = new THREE.MeshBasicMaterial( {color: 0xffff00, side: THREE.DoubleSide} );
+    let box = new THREE.Mesh( geometry, material );
+    scene.add( box );
+
     tick();
 
     function tick() {
+        box.rotation.y += 0.1;
+        box.rotation.x += 0.1;
+        box.rotation.z += 0.1;
+
+        box.position.x += 1;
+        box.position.y += 1;
+        box.position.z += 1;
+
         renderer.render(scene, controlCamera);
         requestAnimationFrame(tick);
     }
