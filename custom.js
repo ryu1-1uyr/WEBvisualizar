@@ -57,13 +57,14 @@ pausebtn.addEventListener('click', function(event){
     isPlay = !isPlay;
 });
 
-let canvas        = document.getElementById('visualizer');
+let canvas = document.getElementById('visualizer');
 let canvasContext = canvas.getContext('2d');
 canvas.setAttribute('width', analyser.frequencyBinCount * 10);
-
-render = function(){
+function render(){
     let spectrums = new Uint8Array(analyser.frequencyBinCount);
     analyser.getByteFrequencyData(spectrums);
+
+    console.log(spectrums)//64要素の配列
 
     canvasContext.clearRect(0, 0, canvas.width, canvas.height);
     for(let i=0, len=spectrums.length; i<len; i++){
@@ -84,3 +85,4 @@ render = function(){
     }
     animationId = requestAnimationFrame(render);
 };
+render();
