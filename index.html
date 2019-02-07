@@ -7,10 +7,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/89/three.min.js"></script>
     <script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/controls/OrbitControls.js"></script>
 
-    <title>ガイド線表示</title>
-</head>
-<body>
-<canvas id="myCanvas"></canvas>
+    <link rel="stylesheet" href="style.css">
 
+    <title>webaudio</title>
+</head>
+<body id="DropFrame" ondragover="handleDragOver(event);" ondrop="execDrop(event);">
+
+<audio id="usermusic" preload="auto" loop="" ></audio>
+<div id="color">
+    <img id="mplaypause" src="img/Orion_pause.png" alt="再生・一時停止" width="40" style="display: inline;">
+</div>
+<span id="output"></span>
+
+<!--<div class="lpimg">-->
+    <!--<img id="lpimg" src="img/lpimg.png" alt="lpimg">-->
+<!--</div>-->
+
+<canvas id="myCanvas"></canvas>
+<canvas id="visualizer"></canvas>
+<script src="custom.js"></script>
 <script src="index.js"></script>
 </body>
