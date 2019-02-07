@@ -39,8 +39,8 @@ function execDrop(e) {
         document.getElementById('output').innerHTML = files[0].name;
         let audiourl = URL.createObjectURL(files[0]);
         audioTag.setAttribute('src' , audiourl);
-        document.querySelector('body').style.backgroundImage = 'url(img/landscape.jpg)';
-        document.getElementById('lpimg').setAttribute('src' , 'img/lpimg.png');
+        // document.querySelector('body').style.backgroundImage = 'url(img/landscape.jpg)';
+        // document.getElementById('lpimg').setAttribute('src' , 'img/lpimg.png');
     }
 }
 
@@ -49,10 +49,10 @@ let isPlay = false;
 pausebtn.addEventListener('click', function(event){
     if (!isPlay) {
         audioTag.play();
-        // pausebtn.setAttribute('src' , 'img/Orion_pause.png');
+        pausebtn.setAttribute('src' , 'img/Orion_pause.png');
     } else {
         audioTag.pause();
-        // pausebtn.setAttribute('src' , 'img/Orion_play.png');
+        pausebtn.setAttribute('src' , 'img/Orion_play.png');
     }
     isPlay = !isPlay;
 });
