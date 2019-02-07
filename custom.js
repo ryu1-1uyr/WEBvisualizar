@@ -10,7 +10,7 @@ let gainNode = audioContext.createGain();
 gainNode.connect(analyser);
 
 let audioTag = document.getElementById('usermusic');
-let pausebtn = document.getElementById('mplaypause')
+let pausebtn = document.getElementById('mplaypause');
 
 source = audioContext.createMediaElementSource(audioTag);
 source.connect(gainNode);
@@ -39,8 +39,8 @@ function execDrop(e) {
         document.getElementById('output').innerHTML = files[0].name;
         let audiourl = URL.createObjectURL(files[0]);
         audioTag.setAttribute('src' , audiourl);
-        document.querySelector('body').style.backgroundImage = 'url(img/landscape.jpg)';
-        document.getElementById('lpimg').setAttribute('src' , 'img/lpimg.jpg');
+        // document.querySelector('body').style.backgroundImage = 'url(img/landscape.jpg)';
+        // document.getElementById('lpimg').setAttribute('src' , 'img/lpimg.png');
     }
 }
 
