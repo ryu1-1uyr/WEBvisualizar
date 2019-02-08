@@ -67,6 +67,7 @@ function render(){
 
     canvasContext.clearRect(0, 0, canvas.width, canvas.height);
     for(let i=0, len=spectrums.length; i<len; i++){
+
         canvasContext.fillStyle = 'rgba(255, 255, 255, 0.7)';
         if (i%3 === 0){
             canvasContext.fillRect(i*10, 80, 4, spectrums[i]/6);
