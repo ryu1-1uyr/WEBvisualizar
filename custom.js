@@ -60,11 +60,10 @@ pausebtn.addEventListener('click', function(event){
 let canvas = document.getElementById('visualizer');
 let canvasContext = canvas.getContext('2d');
 canvas.setAttribute('width', analyser.frequencyBinCount * 10);
+
 function render(){
     let spectrums = new Uint8Array(analyser.frequencyBinCount);
     analyser.getByteFrequencyData(spectrums);
-
-    console.log(spectrums)//64要素の配列
 
     canvasContext.clearRect(0, 0, canvas.width, canvas.height);
     for(let i=0, len=spectrums.length; i<len; i++){
