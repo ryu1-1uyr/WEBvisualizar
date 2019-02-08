@@ -52,17 +52,15 @@ let material = new THREE.MeshBasicMaterial({
 
 const planes = [...new Array(80)].map(()=>{
     const plane = new THREE.Mesh(geometry, material)
-    plane.
+
+    plane.position.x = X_SIZE * (Math.random() - 0.5);
+    plane.position.y = Y_SIZE * (Math.random());
+    plane.position.z = X_SIZE * (Math.random() - 0.5);
+    scene.add( plane );
+
+    return plane
 })
 
-for(let i=0; i<LENGTH; i++){
-    plane[i] = new THREE.Mesh( geometry, material );
-
-    plane[i].position.x = X_SIZE * (Math.random() - 0.5);
-    plane[i].position.y = Y_SIZE * (Math.random());
-    plane[i].position.z = X_SIZE * (Math.random() - 0.5);
-    scene.add( plane[i] );
-}
 
 /*
 
@@ -92,24 +90,24 @@ function random(min, max) {
     return rand;
 }
 
-tick();
+const tick = function () {
+    for(let plane of planes ){
+        plane.rotation.y += (Math.random()*0.1);
+        plane.rotation.x += (Math.random()*0.1);
+        plane.rotation.z += (Math.random()*0.1);
 
-function tick() {
-    for(let i=0; i<LENGTH; i++){
-        plane[i].rotation.y += (Math.random()*0.1);
-        plane[i].rotation.x += (Math.random()*0.1);
-        plane[i].rotation.z += (Math.random()*0.1);
+        plane.position.x += (random(-5, 5)*0.1);
+        plane.position.y += 2.5;
+        plane.position.z += (random(-5, 5)*0.1);
 
-        plane[i].position.x += (random(-5, 5)*0.1);
-        plane[i].position.y += 2.5;
-        plane[i].position.z += (random(-5, 5)*0.1);
-
-        if (plane[i].position.y > height) {
-            plane[i].position.x = X_SIZE * (Math.random() - 0.5);
-            plane[i].position.y = -10;
-            plane[i].position.z = X_SIZE * (Math.random() - 0.5);
+        if (plane.position.y > height) {
+            plane.position.x = X_SIZE * (Math.random() - 0.5);
+            plane.position.y = -10;
+            plane.position.z = X_SIZE * (Math.random() - 0.5);
         }
     }
     renderer.render(scene, controlCamera);
     requestAnimationFrame(tick);
 }
+
+tick();
