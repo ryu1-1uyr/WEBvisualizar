@@ -174,8 +174,13 @@ function random(min, max) {
 }
 
 const tick = function () {
-    let spectrums = new Uint8Array(analyser.frequencyBinCount);
-    analyser.getByteFrequencyData(spectrums);
+    // let spectrums = new Uint8Array(analyser.frequencyBinCount);
+    // analyser.getByteFrequencyData(spectrums);
+
+
+    let spectrums = new Float32Array(analyser.frequencyBinCount);
+    analyser.getFloatFrequencyData(spectrums);
+
 
 
     console.log(spectrums)
@@ -215,7 +220,7 @@ const tick = function () {
         // plane.rotation.y += (Math.random() * 0.03 *(Math.random()*10 > 5?-1:1));
         // plane.rotation.x += (Math.random() * 0.1);
         // plane.rotation.z += (0.1);
-
+        //
         // plane.position.x += (random(50, -50) * 0.1);
         // plane.position.y += 1;
         // plane.position.z += (random(50, -50) * 0.1);
